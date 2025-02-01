@@ -1,0 +1,28 @@
+/* Creates 0 margin and padding for everything
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+    ctrl-/ to comment automatically
+
+*/
+div p {
+    color: purple;
+}
+
+ul.orange > li {
+    color: orange;
+}
+h1 + p {
+    color: teal;
+}
+
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+a:hover {
+    color: red;
+}
