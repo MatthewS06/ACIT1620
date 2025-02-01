@@ -1,16 +1,31 @@
 body {
     font-family: 		'Barlow', sans-serif;
-    background-color:	#636775;
+    background-color:	#20222C;
 }
 header, footer {
-    background-color: #4A4E5E;
+    background-color: #101118;
+    border-radius: 25px;
+
 }
-h2 {
+header {
+    text-align: center;  
+    padding-left: 25px;
+    display: flex;
+}
+footer {
     text-align: center;
 }
 section {
-    background-color: #81848F;
+    border-radius: 25px;
+    padding-left: 50px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #505264;
 }
+ul {
+    text-align: left;
+}
+
 p {
     color: #C7D2D8;
 }
