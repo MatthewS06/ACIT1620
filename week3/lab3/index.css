@@ -5,6 +5,9 @@ body {
 header, footer {
     background-color: #4A4E5E;
 }
+h2 {
+    text-align: center;
+}
 section {
     background-color: #81848F;
 }
