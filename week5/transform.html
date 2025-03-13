@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .translate {
+            width: 150px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            transition: transform 0.5s ease;
+        }
+        .rotate {
+            width: 150px;
+            height: 100px;
+            background-color: coral;
+            text-align: center;
+            line-height: 100px;
+            transition: transform 0.5s ease;
+            transform-origin: top left;
+        }
+        .scale {
+            width: 150px;
+            height: 100px;
+            background-color:green;
+            text-align: center;
+            line-height: 100px;
+            transition: transform 0.5s ease;
+            /* transform-origin: top left; */
+        }
+        .skew {
+            width: 150px;
+            height: 100px;
+            background-color:pink;
+            text-align: center;
+            line-height: 100px;
+            transition: transform 0.5s ease;
+            /* transform-origin: top left; */
+        }
+        .matrix {
+            width: 150px;
+            height: 100px;
+            background-color:yellow;
+            text-align: center;
+            line-height: 100px;
+            transition: transform 0.5s ease;
+            /* transform-origin: top left; */
+        }
+        .color-btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color:royalblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+        .translate:hover {
+            /* transform: translate(50px, 30px);
+            transform: translateX(100px); */
+            transform: translateY(200px);
+        }
+        .rotate:hover {
+            /* transform: rotate(-45deg); */
+            transform: rotate(45deg);
+        }
+        .scale:hover {
+            /* transform: scale(1.5,1.2); */
+            transform: scaleX(1.5);
+            transform: scaleY(1.2);
+        }
+        .skew:hover {
+            /* transform: skew(20deg, 10deg); */
+            transform: skewX(20deg);
+            transform: skewY(10deg);
+        }
+        .matrix:hover {
+            transform: matrix(1, 0.5, -0.5, 1, 30, 20);
+            /* matrix(scaleX, skewY, skewX, scaleY, translateX, translateY) */
+        }
+        .color-btn:hover {
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="translate">Move Me!</div>
+    <div class="rotate">Rotate Me!</div>
+    <div class="scale">Scale Me!</div>
+    <div class="skew">Skew Me!</div>
+    <div class="matrix">Matrix Me!</div>
+    <div class="color-btn">Hover Me!</div>
+</body>
+</html>

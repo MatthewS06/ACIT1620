@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Positioning</title>
+    <style>
+        body {
+            width: 500px;
+            margin: 0 auto;
+        }
+        body {
+            background: aqua;
+            border: 3px solid blue;
+            margin: 10px;
+            padding: 10px;
+        }
+        span {
+            background: red;
+            border: 1px solid black;
+        }
+        .positioned {
+            position: relative;
+            background: yellow;
+            top: 30px;
+            left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Relative Positioning</h1>
+
+    <p>
+        I am a basic block element. My adjacent block level elements sit on new lines below me.
+    </p>
+
+    <p class="positioned">
+        By default, we span 100% of the width of our parent
+        element, and we are as tall as our child element. 
+        our total width and height is out content + padding + 
+        border wodth/height;
+    </p>
+
+    <p>
+        We are seperated by our margins. Because of margin 
+        collapsing, we are seperated by the width of one of our 
+        margins, not both.
+    </p>
+
+    <p>Inline Elements <span>like this one</span> and 
+        <span>this one</span> sit on the same line as one another
+    </p>
+</body>
+</html>

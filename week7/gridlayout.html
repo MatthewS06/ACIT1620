@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid Layout</title>
+        <style>
+            .container {
+                display: grid;
+                grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+                /* grid-template-columns: 100px 100px; */
+                /* grid-template-rows: 100px 100px; */
+                /* grid-template-columns: 1fr 2fr 1fr; */
+                grid-template-rows: auto;
+                grid-template-columns: 200px 1fr;
+                gap: 10px;
+            }
+            .item {
+                background-color: lightblue;
+                padding: 20px;
+                text-align: center;
+                border: 1px solid black;
+                
+            }
+            .header {
+                grid-area: header;
+                background: lightblue;
+            }
+            .sidebar {
+                grid-area: sidebar;
+                background: lightgreen;
+            }
+            .content {
+                grid-area: content;
+                background: lightcoral;
+            }
+            .footer {
+                grid-area: footer;
+                background: lightgray;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="sidebar">Sidebar</div>
+            <div class="content">Main Content</div>
+            <div class="footer">Footer</div>
+        </div>
+        <!-- <div class="container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </div> -->
+    </body>
+</html>
