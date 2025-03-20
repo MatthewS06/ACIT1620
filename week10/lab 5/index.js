@@ -48,8 +48,8 @@ urls = ['https://i.ibb.co/sjvVrG3/fruit-plyh.jpg',
         'https://i.ibb.co/CVwKM8Z/fruit-ecuh.jpg',
         'https://i.ibb.co/ccNyKX0/fruit-uzxc.jpg'
     ]
-randomUrls = shuffle(urls)
-console.log(randomUrls)
+randomUrls = shuffle(urls);
+console.log(randomUrls);
 /*
 In the following line of code, document.querySelectorAll 
 selects all <img> elements that are inside any element 
@@ -91,20 +91,14 @@ const images = document.querySelectorAll('.card img');
 */
 
 /*Your code goes here for step 2*/
+
 let i = 0;
-let code = '';
-function init(url) {
-    let game = document.getElementById("game");
-    while (i < url.length) {
-        code += '<div class="card"><img src="'+ url[i] +'"></div>';
-        i += 1;
-    }
-    game.innerHTML = code;
-    console.log(game);
+while(i < images.length) {
+    images[i].src = urls[i];
+    i += 1;
 }
-window.onload = init(randomUrls)
 
 const h1 = document.querySelector('h1');
-h1.append("!")
+h1.append("!");
 
 
