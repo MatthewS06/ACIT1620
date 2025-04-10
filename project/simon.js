@@ -36,7 +36,7 @@ function started() {
 
 function nextlevel() {
     level++;
-    leveldisplay.textContent = 'Level:' + level;
+    leveldisplay.textContent = 'Level ' + level;
     input = [];
     
     let randomcolor = colors[Math.floor(Math.random() * colors.length)];
