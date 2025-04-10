@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aim Trainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav>
+                <a class="selected" href="aim.html">Aim Trainer</a>
+                <a href="howtoaim.html">How to Play Aim Trainer</a>
+                <a href="simon.html">Simon Says</a>
+                <a href="howtosimon.html">How to Play Simon Says</a>
+            </nav>
+        </div>
+    </header>
+    <h1>Aim Trainer</h1>
+    <div id="timer">Time: 60</div>
+    <div id="score">Score: 0</div>
+    <div id="difficulty">Difficulty: Easy</div>
+    <button id="start" class="start">Start Game</button>
+    <button id="stop" class="stop">Stop Game</button>
+    <div id="buttons">
+        <button class="btn" style="background-color: #393276; color: white;">Easy</button>
+        <button class="btn" style="background-color: #3A7113; color: white;">Medium</button>
+        <button class="btn" style="background-color: #7E1518; color: white;">Hard</button>
+    </div>
+    <div id="game"><div id="t" class="target"></div></div>
+    
+    <script src="aim.js"></script>
+</body>
+</html>

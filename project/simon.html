@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simon Says</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project.css"/>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav>
+                <a href="aim.html">Aim Trainer</a>
+                <a href="howtoaim.html">How to Play Aim Trainer</a>
+                <a class="selected" href="simon.html">Simon Says</a>
+                <a href="howtosimon.html">How to Play Simon Says</a>
+            </nav>
+        </div>
+    </header>
+    <h1>Simon Says</h1>
+    <div id="level">Level 0</div>
+    <div id="message">Press start to begin!</div>
+    <div id="game-board">
+        <div id="green" class="color"></div>
+        <div id="red" class="color"></div>
+        <div id="yellow" class="color"></div>
+        <div id="blue" class="color"></div>
+    </div>
+    <div id="controls">
+        <button id="start-btn">Start Game</button>
+    </div>
+
+    <script src="simon.js"></script>
+</body>
+</html>
